@@ -1,5 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-scp -p chazfw1:/media/ssd-test/sysbench/results/*.dat .
-scp -p chazfw1:/media/sas-test/sysbench/results/*.dat .
-scp -p dwh1:/var/lib/mysql/sysbench/results/*.dat .
+hostpath=$1
+serie=$2
+
+[ -d series/$serie ] || mkdir -p series/$serie
+scp -p "root@${hostpath}/results/*.dat" series/$serie/

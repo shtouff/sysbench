@@ -1,0 +1,2 @@
+name=Crucial_M4_alone
+desc="one M4 only, no RAID / no stripping, LVM, XFS nobarrier"

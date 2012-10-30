@@ -1,0 +1,2 @@
+name="Crucial_M4_RAID0_LVM"
+desc="2 x Crucial M4 512GB with LVM stripping, XFS nobarrier"
